@@ -22,4 +22,9 @@ Pod::Spec.new do |s|
     tag: s.version
   }
   s.source_files = 'Source/**/*.swift'
+  s.resource_bundles = {
+    'SWXMLHash' => [
+      'Source/PrivacyInfo.xcprivacy',
+    ]
+  }
 end

@@ -39,7 +39,10 @@ let package = Package(
         .target(
             name: "SWXMLHash",
             path: "Source",
-            exclude: ["Info.plist"]
+            exclude: ["Info.plist"],
+            resources: [
+                .process("PrivacyInfo.xcprivacy"),
+            ]
         ),
         .testTarget(
             name: "SWXMLHashTests",
